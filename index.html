@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+<img src="./images/logo.svg" alt="" class="logo">
+<div class="main-container">
+  <div class="inputs">
+  <form class="input-content" id="myform">
+    <label for="bill">Bill</label>
+    <p class="dollar-bill">
+      <img src="./images/icon-dollar.svg" alt="">
+    <input type="number" min="0" id="bill" class="input-box" onchange="changeBill()"></p>
+    </form>
+    <label for="tip-amount">Select Tip %</label>
+    <div class="tip-percent"> 
+      <button id="btn" value="0.05">5%</button>
+      <button value="0.1">10%</button>
+      <button value="0.15">15%</button>
+      <button value="0.2">20%</button>
+      <button value="0.25">25%</button>
+      <input type="number" min="0" max="1" id="custom" placeholder="Custom" onchange="customTipPercent()">
+    </div> 
+    <label for="number-of-people">Number of People</label>
+    <p class="person">
+      <img src="./images/icon-person.svg" alt="">
+      <input type="number" min="1" id="number-of-people" class="input-box" value="1" onchange="changeNumPeople()">
+    </p></div>
+
+    <div class="result-box">
+    <div class="tip-result">
+        <div class="tip-result-text">
+          <p>Tip Amount</p>
+          <p class="text-person">/ person</p>
+        </div>
+        <div class="dollar-result">
+          <img src="./images/icon-dollar.svg" alt="">
+          <p id="tip-result">0.00</p>
+        </div>
+    </div>
+    <div class="total-result">
+      <div class="total-result-text">
+          <p>Total </p>
+          <p class="text-person">/ person</p>
+      </div>
+      <div class="dollar-result">
+        <img src="./images/icon-dollar.svg" alt="">
+        <p id="total-result" value="">0.00</p>
+      </div>
+    </div>
+    <button class="reset-btn" id="reset">RESET</button>
+  </div>
+  
+  <script src="./js/script.js"></script>
+</div>
+
+</body>
+</html>
