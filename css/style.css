@@ -219,6 +219,7 @@ text-align: center;
     #custom{
         width: 32%;
         text-align: left;
+        font-size: 15px;
     }
     .result-box{
         padding: 40px;
