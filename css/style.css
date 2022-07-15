@@ -3,11 +3,10 @@ body{
     display:flex;
     flex-direction: column;
    align-items: center;
-   
     background-color:hsl(185, 41%, 84%);
     font-family: Space Mono;
-font-weight: 700;
-
+    font-weight: 700;
+    height:100vh;
 
 }
 .logo{
@@ -181,27 +180,31 @@ text-align: center;
     width: 100%;
 }
 
-@media screen and (min-width:1000px){
+@media screen and (min-width:1200px){
     .logo{
-        margin:165px 0 0 0 0;
+        margin:5% 0 0 0;
     }
-    body{
-        flex-direction: column;
-    }
+   
     
     .main-container{
         flex-direction: row;
         justify-content: space-between;
         width: 64%;
+        box-sizing: border-box;
         padding: 0;
         border-radius: 25px;
-       height:47%;
-        margin-top: 90px;
+        margin-top: 2%;
     }
   
     .inputs{
         width:41.3%;
         margin:48px;
+    }
+    .input-box{
+        margin-bottom:0px;
+    }
+    .input-content{
+        margin-bottom:32px;
     }
     .result-box{
         width:45%;
@@ -221,10 +224,10 @@ text-align: center;
         padding: 40px;
     }
     .reset-btn{
-        margin-top:200px;
+        margin-top:110px;
     }
     .dollar-result p{
-        font-family: Space Mono;
+    font-family: Space Mono;
     font-size: 48px;
     line-height: 70px;
    
