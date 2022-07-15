@@ -13,12 +13,12 @@ function setResult0(){
 }
 
 function calculates(){
-    totalBillAmount = billAmount*(1-percent)/numPeople;
+    totalBillAmount = billAmount*(1+percent)/numPeople;
         totalTipAmount = billAmount*percent/numPeople;
 }
 
 function changeBill(){
-    billAmount=document.querySelector("#bill").value;
+    billAmount=document.querySelector("(-1)#bill").value;
     if(percent == 1){
         totalBillAmount = billAmount*percent/numPeople;
         totalTipAmount = billAmount*(1-percent)/numPeople;
